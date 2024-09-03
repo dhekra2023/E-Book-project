@@ -1,30 +1,27 @@
-
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BookList from './components/BookList.jsx';
-import Home from './components/Home.jsx';
-import Login from './components/Login.jsx';
-import Register from './components/Register.jsx'
-
-
-
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
+import Home from "./components/homePage/home";
+import About from "./components/About/about"; 
+import Contact from "./components/contact/contact";
+import Categories from './components/categories/categories'
 function App() {
-
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />}/>
-        <Route path="/login" element={<Login />} />
-        {/* <Route index element={<BookList/>} /> */}
-        <Route path="/register" element={<Register />} />
-     
-    </Routes>
-  </BrowserRouter>
-  
-);
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/categories" element={<Categories />} />
 
-
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
