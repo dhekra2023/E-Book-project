@@ -7,12 +7,17 @@ import './home.css';
 function Home() {
   return (
     <div className="home-container">
+      <div className="search">
+      <input type ="text" placeholder="Enter Your Book Name"/>
+      <button><i class= "fa-search"></i></button>
+    </div>
+    
       <div className="icon-container">
         <img src={addIcon} alt="Add Icon" className="icon" />
         <img src={editIcon} alt="Edit Icon" className="icon" />
         <img src={deleteIcon} alt="Delete Icon" className="icon" />
       </div>
-
+      <img src="./images/imgb.webp" alt=""/>
       <div className="card-container">
         <div className="card">
           <img className="card-img-top" src={addIcon} alt="Card image cap" />
