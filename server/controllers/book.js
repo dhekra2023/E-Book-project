@@ -13,6 +13,21 @@ const selectBook= async (req,res)=>{
     }
 
 }
+const selectBookById =async(req,res)=>{
+    try{
+const {idbook}=req.body
+const querySelect=`SELECT * FROM book WHERE idbook= :idbook`
+const resultQuery=await sequelize.query(querySelect,{
+    replacements:{
+        idbook:idbook
+    },
+    type: sequelize.QueryTypes.SELECT
+})
+res.status(200).send(resultQuery)
+    }catch(err){
+        res.status(500).send('err select')
+    }
+}
 const InsertBook = async (req, res) => {
     try {
     const { title, price, description, stock, author,img } = req.body;
@@ -88,5 +103,6 @@ module.exports={
     selectBook,
     InsertBook,
     deleteBook,
-    updateBook
+    updateBook,
+    selectBookById
 }

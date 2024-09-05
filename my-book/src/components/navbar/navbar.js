@@ -19,8 +19,8 @@ const Navbar = () => {
         <Link to="/contact">Contact</Link>
         </div>
         <div className="navbar-Auth">
-        <Link to='/Sign In'>Sign In</Link>
-        <Link to='/Sign Up'>Sign Up</Link>
+        <Link to='/login'>Login</Link>
+        <Link to='/register'>Register</Link>
 
       </div>
     </nav>
