@@ -80,11 +80,6 @@ function Home() {
 
   return (
     <div className="home-container">
-      <div className="search">
-        <input type="text" placeholder="Enter Your Book Name" />
-        <button><i className="fa fa-search"></i></button>
-      </div>
-      
       <div className="icon-container">
         <img
           src={addIcon}

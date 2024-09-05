@@ -1,0 +1,38 @@
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-image: url("https://img.freepik.com/fotos-premium/banner-ou-imagem-de-cabecalho-com-pilha-de-livros-de-couro-antigos-em-fundo-de-biblioteca-fora-de-foco_1053-21796.jpg");
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #c0945a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.btn-primary {
+    width: 50%;
+    padding: 7px;
+    font-size: 16px;
+    background-color: #a56a1e;
+    color: white;
+    border-radius: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.App {
+background-image: url("https://live.staticflickr.com/7080/26288172874_685396c8d7_b.jpg");
+width: 100%;
+height: 50%;
+}
